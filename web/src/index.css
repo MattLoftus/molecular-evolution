@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-primary: #0a0f1a;
+  --color-bg-card: #1a2332;
+  --color-bg-sidebar: #0f1923;
+  --color-border: #1e2d3d;
+  --color-text-primary: #e8edf5;
+  --color-text-secondary: #a0aec0;
+  --color-accent-green: #10b981;
+  --color-accent-blue: #3b82f6;
+  --color-accent-amber: #f59e0b;
+  --color-accent-purple: #8b5cf6;
+  --color-accent-red: #ef4444;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: #0a0f1a;
+  color: #e8edf5;
+}
+
+code, .font-mono {
+  font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a3a4f;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a4a5f;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  background: #1e2d3d;
+  border-radius: 2px;
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  background: #10b981;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(16, 185, 129, 0.4);
+}
+
+.js-plotly-plot .plotly .modebar {
+  display: none !important;
+}

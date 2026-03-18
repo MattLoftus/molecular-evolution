@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+*.pyc
+node_modules/
+dist/
+results/
+data/targets/*.pdb
+data/targets/*.pdbqt
+data/vina
+.DS_Store
+*.log
